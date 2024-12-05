@@ -17,6 +17,7 @@ if (args.length === 1) {
   const template = readFileSync('./template.ts')
   writeFileSync(`${dir}/puzzle1.ts`, template)
   writeFileSync(`${dir}/puzzle2.ts`, template)
+  writeFileSync(`input/${day}.txt`, '')
 } else if (args.length === 2) {
   const day = args[0]
   const puzzle = args[1]
